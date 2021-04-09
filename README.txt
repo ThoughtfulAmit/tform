@@ -1,0 +1,1 @@
+This is the terraform scripts for creating a Kubernetes cluster on GCP for the capstone project. This file has the creation scripts for backend and front end services.
