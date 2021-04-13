@@ -34,3 +34,8 @@ variable "frontend_image_name" {
   type        = string
   description = "Frontend Image Name"
 }
+
+  variable "build_id" {
+  type = number
+  description = "Jenkins Build ID"
+}

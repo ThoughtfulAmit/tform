@@ -7,6 +7,7 @@ resource "kubernetes_deployment" "weather-frontend-deployment" {
     namespace = kubernetes_namespace.weatherns.metadata[0].name
   }
 
+  
   spec {
     replicas                  = 2
     progress_deadline_seconds = 240
@@ -23,7 +24,7 @@ resource "kubernetes_deployment" "weather-frontend-deployment" {
       }
       spec {
         container {
-          image = "${var.container_registry}/${var.project_id}/${var.frontend_image_name}:jenkins_build_id"
+          image = "${var.container_registry}/${var.project_id}/${var.frontend_image_name}:${var.build_id}"
           name  = "weather-frontend"
 
           env {
