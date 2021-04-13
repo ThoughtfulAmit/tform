@@ -2,8 +2,8 @@
 # GCP Settings for captsone project
 project_id          = "argon-radius-309605" # Enter your project ID here.
 container_registry  = "gcr.io"
-backend_image_name = "weathermicrosvc:latest"
-frontend_image_name = "nodejsweatherapp:latest"
+backend_image_name = "weathermicrosvc"
+frontend_image_name = "nodejsweatherapp"
 #backend_image_name = "weathermicrosvc@sha256:29eee881aee4bde0f0fc3bdee1d5871cd2c2b47702af015dc9ccd15d0cc265d5"
 #frontend_image_name = "nodejsweatherapp@sha256:186cdf62d8720ccf40354e904419db9680abfd8c956fb3082f351adc33067d44"
 
