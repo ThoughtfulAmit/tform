@@ -23,7 +23,7 @@ resource "kubernetes_deployment" "weather-backend-deployment" {
       }
       spec {
         container {
-          image = "${var.container_registry}/${var.project_id}/${var.backend_image_name}"
+          image = "${var.container_registry}/${var.project_id}/${var.backend_image_name}:${env.BUILD_ID}"
           name  = "weather-backend"
 
           env {
