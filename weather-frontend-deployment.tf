@@ -25,6 +25,7 @@ resource "kubernetes_deployment" "weather-frontend-deployment" {
       spec {
         container {
           image = "${var.container_registry}/${var.project_id}/${var.frontend_image_name}:${var.build_id}"
+          image_pull_policy = "Always"
           name  = "weather-frontend"
 
           env {
