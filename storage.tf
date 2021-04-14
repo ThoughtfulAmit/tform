@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket = "capstone-tfstate"
+    bucket = "capstone-terraform-state"
     
 }
 }
